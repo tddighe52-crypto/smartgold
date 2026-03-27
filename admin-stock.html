@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldNest | Stock Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2>👑 Smart Gold shop management system</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="admin-dashboard.html" class="nav-item">📊 Dashboard</a>
+                <a href="admin-billing.html" class="nav-item">💰 Billing</a>
+                <a href="admin-reports.html" class="nav-item">📈 Reports</a>
+                <a href="admin-stock.html" class="nav-item active">📦 Stock Management</a>
+                <a href="index.html" class="nav-item">🚪 Logout</a>
+            </nav>
+        </div>
+        
+        <div class="dashboard-main">
+            <h2>📦 Stock Management</h2>
+            
+            <div class="products-section">
+                <h3 class="category-title"> Gunthan Collection</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Image</th><th>Name</th><th>Weight</th><th>Price/g</th><th>Qty</th><th>Purity</th><th>Actions</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="gunthan-img-1">
+                                    <img src="images/gunthan-1.jpg" alt="Traditional Gunthan" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Traditional Gunthan</td>
+                            <td>25g</td>
+                            <td>₹5,500</td>
+                            <td class="low-stock">5</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="gunthan-img-2">
+                                    <img src="images/gunthan-2.jpg" alt="Designer Gunthan" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Designer Gunthan</td>
+                            <td>30g</td>
+                            <td>₹5,800</td>
+                            <td class="low-stock">3</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="gunthan-img-3">
+                                    <img src="images/gunthan-3.jpg" alt="Temple Gunthan" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Temple Gunthan</td>
+                            <td>28g</td>
+                            <td>₹5,600</td>
+                            <td class="low-stock">2</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="products-section">
+                <h3 class="category-title">💍 Ring Collection</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Image</th><th>Name</th><th>Weight</th><th>Price/g</th><th>Qty</th><th>Purity</th><th>Actions</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="ring-img-1">
+                                    <img src="images/ring-1.jpg" alt="Diamond Ring" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Diamond Ring</td>
+                            <td>5g</td>
+                            <td>₹6,500</td>
+                            <td>8</td>
+                            <td>18K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="ring-img-2">
+                                    <img src="images/ring-2.jpg" alt="Gold Band Ring" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Gold Band Ring</td>
+                            <td>4g</td>
+                            <td>₹5,800</td>
+                            <td>4</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="ring-img-3">
+                                    <img src="images/ring-3.jpg" alt="Solitaire Ring" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Solitaire Ring</td>
+                            <td>3g</td>
+                            <td>₹7,200</td>
+                            <td class="low-stock">2</td>
+                            <td>18K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="products-section">
+                <h3 class="category-title"> Other Gold Items</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Image</th><th>Name</th><th>Weight</th><th>Price/g</th><th>Qty</th><th>Purity</th><th>Actions</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="other-img-1">
+                                    <img src="images/chain-1.jpg" alt="Gold Chain" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Gold Chain</td>
+                            <td>15g</td>
+                            <td>₹5,400</td>
+                            <td>6</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="other-img-2">
+                                    <img src="images/earrings-1.jpg" alt="Gold Earrings" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Gold Earrings</td>
+                            <td>8g</td>
+                            <td>₹5,900</td>
+                            <td>7</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="image-placeholder" id="other-img-3">
+                                    <img src="images/bangle-1.jpg" alt="Gold Bangle" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=image-placeholder-empty>📷 Add Image</div>'">
+                                </div>
+                            </td>
+                            <td>Gold Bangle</td>
+                            <td>12g</td>
+                            <td>₹5,700</td>
+                            <td class="low-stock">3</td>
+                            <td>22K</td>
+                            <td><button class="btn-small" onclick="alert('Upload image feature - Add your image URL')">📷 Add Image</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="stock-header">
+                <button class="btn-primary">+ Add New Product</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

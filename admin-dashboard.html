@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldNest | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2>👑 GoldNest</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="admin-dashboard.html" class="nav-item active">📊 Dashboard</a>
+                <a href="admin-billing.html" class="nav-item">💰 Billing</a>
+                <a href="admin-reports.html" class="nav-item">📈 Reports</a>
+                <a href="admin-stock.html" class="nav-item">📦 Stock Management</a>
+                <a href="index.html" class="nav-item">🚪 Logout</a>
+            </nav>
+        </div>
+        
+        <div class="dashboard-main">
+            <h2>Dashboard Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Total Products</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">₹1,85,000</div>
+                    <div class="stat-label">Total Revenue</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Total Bills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Low Stock Items</div>
+                </div>
+            </div>
+            
+            <div class="recent-section">
+                <h3>Recent Sales</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Bill ID</th><th>Date</th><th>Customer</th><th>Amount</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#101</td><td>25/03/2025</td><td>Rajesh Sharma</td><td>₹12,500</td></tr>
+                        <tr><td>#102</td><td>25/03/2025</td><td>Priya Patel</td><td>₹8,750</td></tr>
+                        <tr><td>#103</td><td>24/03/2025</td><td>Amit Kumar</td><td>₹22,000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

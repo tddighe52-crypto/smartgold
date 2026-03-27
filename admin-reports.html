@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldNest | Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2>👑 GoldNest</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="admin-dashboard.html" class="nav-item">📊 Dashboard</a>
+                <a href="admin-billing.html" class="nav-item">💰 Billing</a>
+                <a href="admin-reports.html" class="nav-item active">📈 Reports</a>
+                <a href="admin-stock.html" class="nav-item">📦 Stock Management</a>
+                <a href="index.html" class="nav-item">🚪 Logout</a>
+            </nav>
+        </div>
+        
+        <div class="dashboard-main">
+            <h2>📈 Sales Reports</h2>
+            <div class="reports-container">
+                <div class="filter-bar">
+                    <input type="text" placeholder="Search by customer..." class="form-input">
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Bill ID</th><th>Date</th><th>Customer</th><th>Product</th><th>Amount</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#101</td><td>25/03/2025</td><td>Rajesh Sharma</td><td>Traditional Gunthan</td><td>₹1,41,625</td></tr>
+                        <tr><td>#102</td><td>25/03/2025</td><td>Priya Patel</td><td>Diamond Ring</td><td>₹33,488</td></tr>
+                        <tr><td>#103</td><td>24/03/2025</td><td>Amit Kumar</td><td>Gold Chain</td><td>₹83,430</td></tr>
+                        <tr><td>#104</td><td>24/03/2025</td><td>Neha Gupta</td><td>Designer Gunthan</td><td>₹1,79,220</td></tr>
+                        <tr><td>#105</td><td>23/03/2025</td><td>Vikram Singh</td><td>Gold Bangle</td><td>₹70,452</td></tr>
+                    </tbody>
+                </table>
+                <div class="total-sales-box">
+                    <h3>Total Sales: <span>₹5,08,215</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

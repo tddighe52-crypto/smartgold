@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldNest | Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2>👑 GoldNest</h2>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="admin-dashboard.html" class="nav-item">📊 Dashboard</a>
+                <a href="admin-billing.html" class="nav-item active">💰 Billing</a>
+                <a href="admin-reports.html" class="nav-item">📈 Reports</a>
+                <a href="admin-stock.html" class="nav-item">📦 Stock Management</a>
+                <a href="index.html" class="nav-item">🚪 Logout</a>
+            </nav>
+        </div>
+        
+        <div class="dashboard-main">
+            <h2>💰 Generate Bill</h2>
+            <div class="billing-card">
+                <form action="#" class="billing-form">
+                    <input type="text" placeholder="Customer Name" class="form-input" required>
+                    <select class="form-select">
+                        <option>Select Product</option>
+                        <option>Traditional Gunthan - 25g (₹5,500/g)</option>
+                        <option>Designer Gunthan - 30g (₹5,800/g)</option>
+                        <option>Diamond Ring - 5g (₹6,500/g)</option>
+                        <option>Gold Chain - 15g (₹5,400/g)</option>
+                    </select>
+                    <input type="number" placeholder="Quantity" value="1" class="form-input">
+                    <button type="submit" class="btn-primary">Calculate Bill</button>
+                </form>
+                
+                <div class="bill-preview">
+                    <h3>📄 Bill Preview</h3>
+                    <div class="gold-image-circle">🔱</div>
+                    <p><strong>Product:</strong> Traditional Gunthan (22K)</p>
+                    <p><strong>Weight:</strong> 25g × 1 = 25g</p>
+                    <p><strong>Price:</strong> ₹5,500/g</p>
+                    <hr>
+                    <p><strong>Subtotal:</strong> ₹1,37,500</p>
+                    <p><strong>GST (3%):</strong> ₹4,125</p>
+                    <h3><strong>Grand Total:</strong> ₹1,41,625</h3>
+                </div>
+                
+                <button class="btn-success">✅ Generate Invoice</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

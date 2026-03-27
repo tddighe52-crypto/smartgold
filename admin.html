@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldNest | Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="gold-icon">👑</div>
+                <h1>Admin Login</h1>
+                <p>Access GoldNest Management Panel</p>
+            </div>
+            
+            <div class="login-form">
+                <input type="text" id="adminUser" placeholder="Username" value="admin">
+                <input type="password" id="adminPass" placeholder="Password" value="admin123">
+                <button class="login-btn" onclick="adminLogin()">Login to Dashboard</button>
+                <p class="demo-info">Demo: admin / admin123</p>
+                <p class="back-link" onclick="location.href='index.html'">← Back to Home</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function adminLogin() {
+            let user = document.getElementById('adminUser').value;
+            let pass = document.getElementById('adminPass').value;
+            if(user === 'admin' && pass === 'admin123') {
+                localStorage.setItem('adminLoggedIn', 'true');
+                window.location.href = 'admin-dashboard.html';
+            } else {
+                alert('Invalid credentials! Use: admin / admin123');
+            }
+        }
+    </script>
+</body>
+</html>
